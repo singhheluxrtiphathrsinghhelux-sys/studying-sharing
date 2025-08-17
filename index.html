@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    /* Banner */
+    .banner {
+      background: url(Banner\ home.jpg) no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    /* Section 3 หัวข้อ */
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .three-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+    .card p {
+      padding: 0 15px 20px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Section 8 หัวข้อ */
+    .grid-menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .menu-item:hover {
+      transform: translateY(-5px);
+      background: #f0f0f0;
+    }
+    .menu-item a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner"></div>
+
+  <div class="three-cards">
+    <div class="card">
+      <a href="ม.4.jpg" target="_blank">
+        <img src="ม.4.jpg" alt="หัวข้อ 1">
+      </a>
+      <h3>มัธยม 4</h3>
+      <p>แผนการเรียนรายวิชา</p>
+    </div>
+  
+    <div class="card">
+      <a href="ม.5.jpg" target="_blank">
+        <img src="ม.5.jpg" alt="หัวข้อ 2">
+      </a>
+      <h3>มัธยม 5</h3>
+      <p>แผนการเรียนรายวิชา</p>
+    </div>
+  
+    <div class="card">
+      <a href="ม6.jpg" target="_blank">
+        <img src="ม6.jpg" alt="หัวข้อ 3">
+      </a>
+      <h3>มัธยม 6</h3>
+      <p>แผนการเรียนรายวิชา</p>
+    </div>
+  </div>
+  
+
+  <!-- Section 8 หัวข้อ -->
+  <div class="section-title">เลือกวิชาที่คุณสนใจ</div>
+  <div class="grid-menu">
+    <div class="menu-item"><a href="physics.html">ฟิสิกส์</a></div>
+    <div class="menu-item"><a href="chemistry.html">เคมี</a></div>
+    <div class="menu-item"><a href="biology.html">ชีวะ</a></div>
+    <div class="menu-item"><a href="math.html">คณิตศาสตร์</a></div>
+    <div class="menu-item"><a href="thai.html">ภาษาไทย</a></div>
+    <div class="menu-item"><a href="english.html">ภาษาอังกฤษ</a></div>
+    <div class="menu-item"><a href="social.html">สังคม</a></div>
+  </div>
+
+  <footer>
+    <p>Website นี้จัดทำเพื่อช่วยแนะนำแนวทางการเรียนในมัธยมปลาย</p>
+  </footer>
+
+</body>
+</html>
